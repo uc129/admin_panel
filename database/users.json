@@ -15,7 +15,7 @@
         "age":22,
         "date_of_birth":"2022-02-07",
         "location":"Wollongong",
-        "isMember":true,
+        "isMember":false,
         "company":"Freedom"
 
     },
@@ -34,7 +34,7 @@
         "age":4,
         "date_of_birth":"1998-02-27",
         "location":"Wollongong",
-        "isMember":true,
+        "isMember":false,
         "company":"Chewdom"
 
     },{

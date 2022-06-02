@@ -1,0 +1,14 @@
+[{
+
+    "title": "Admin Panel",
+
+    "header" : "Welcome to Admin Panel",
+
+    "nav":{"pages":["Home,About,Songs,Login, Shop"]},
+
+    "sidebar":{"pages":["Recent,Blog,Favourites,Friends, Shop"]}
+
+
+
+
+}]

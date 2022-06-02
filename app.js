@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require("express");
 const app = express();
 require ('express-async-errors')
+const jsonHome = require("./database/home.json")
 
 
 // middlewares
@@ -17,12 +18,14 @@ const songRouter = require('./routes/songs')
 const connectDB = require('./database/connectDB')
 
 
-//Homepage
+
 //app router
-app.use('/users', userRouter)
-app.use('/songs', songRouter)
+app.use('/api/users', userRouter)
+app.use('/api/songs', songRouter)
+
+//Homepage
 app.get('/', (req, res) => {
-    res.send('<h1>Admin Panel</h1> ')
+    res.status(200).json(jsonHome)
 })
 
 

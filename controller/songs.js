@@ -69,6 +69,7 @@ const getAllSongs = async (req, res)=>{
   const limit = Number(req.query.limit) || 10
   const skip = (page -1) *limit
   result = result.skip(skip).limit(limit)
+  
   const songs = await result
   res.status(200).json({songs, nbHits:songs.length})
 };
