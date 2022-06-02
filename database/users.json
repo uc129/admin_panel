@@ -1,0 +1,52 @@
+
+[
+
+    {
+        "name":"Krishnam",
+        "age":24,
+        "date_of_birth":"2002-12-09",
+        "location":"Sydney",
+        "isMember":true,
+        "company":"Free"
+    },
+    {
+
+        "name":"Utkarsh",
+        "age":22,
+        "date_of_birth":"2022-02-07",
+        "location":"Wollongong",
+        "isMember":true,
+        "company":"Freedom"
+
+    },
+    {
+
+        "name":"Scooby Doo",
+        "age": 4,
+        "date_of_birth":"2102-12-24",
+        "location":"Wollongong",
+        "isMember":true,
+        "company":"Chewdom"
+
+    },{
+
+        "name":"Ivar",
+        "age":4,
+        "date_of_birth":"1998-02-27",
+        "location":"Wollongong",
+        "isMember":true,
+        "company":"Chewdom"
+
+    },{
+
+        "name":"Rick Sanchez",
+        "age":62,
+        "date_of_birth":"2342-12-09",
+        "location":"Multiple",
+        "isMember":true,
+        "company":"Rickdom"
+
+    }
+    
+
+]

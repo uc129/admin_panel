@@ -1,0 +1,57 @@
+[
+
+{   "name":"Love The Way You Lie",
+    "release_date":"2010",
+    "album":"Recovery",
+    "position":15,
+    "artist":"Eminem",
+    "featured":true,
+    "artwork":"",
+    "genre": "HipHop"
+},
+
+{   "name":"Song 2",
+    "release_date":"2010",
+    "album":"Album 2",
+    "position":10,
+    "artist":"Eminem",
+    "featured":false,
+    "artwork":"",
+    "genre": "HipHop"
+},
+
+{   "name":"Song 3",
+    "release_date":"2010",
+    "album":"Recovery",
+    "position":5,
+    "artist":"Eminem",
+    "featured":true,
+    "artwork":"",
+    "genre": "HipHop"
+},
+
+{   "name":"Song 4",
+    "release_date":"2010",
+    "album":"Recovery",
+    "position":4,
+    "artist":"Kendrik",
+    "featured":false,
+    "artwork":"",
+    "genre": "Pop"
+},
+
+{   "name":"Song 5",
+    "release_date":"2010",
+    "album":"Recovery",
+    "position":3,
+    "artist":"Eminem",
+    "featured":true,
+    "artwork":"",
+    "genre": "Rock"
+}
+
+
+
+
+
+]
