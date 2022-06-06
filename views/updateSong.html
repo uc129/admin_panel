@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Song</title>
+    <link rel="stylesheet" href="updateSong.css">
+</head>
+
+<body>
+
+    <div class="update_song_form-wrap" id="update_song_form-wrap">
+        <form action="http://localhost:5000/api/songs/" method="post" class="update_song_form" id="update_song_form">
+
+
+            <label for="song_id">Song ID <input type="text" name="song_id" id="song_id"> </label>
+            <label for="song_id">Name <input type="text" name="song_name" id="song_name"></label>
+            <label for="song_id">Album <input type="text" name="song_album" id="song_album"></label>
+            <label for="song_id">Genre <input type="text" name="song_genre" id="song_genre"></label>
+            <label for="song_id">Position In Album <input type="text" name="song_position" id="song_position"></label>
+            <label for="song_id">Artist<input type="text" name="song_artist" id="song_artist"></label>
+            <label for="song_id">isFeatured?<input type="checkbox" name="song_featured" id="song_featured"></label>
+            <label for="song_id">Song Art <input:Image name="song_art" id="song_art"></input:Image> </label>
+
+            <input type="submit" value="Submit">
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 const express = require('express')
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const song = require('../database/models/song');
 const Song = require('../database/models/song')
 
 const getAllSongs = async (req, res)=>{
@@ -27,7 +28,7 @@ const getAllSongs = async (req, res)=>{
 
 
   if (numericFilters){
-    console.log(`this is ${numericFilters}`)
+    // console.log(`this is ${numericFilters}`)
 
     const operatorMap ={
       ">":"$gt",
@@ -49,7 +50,7 @@ const getAllSongs = async (req, res)=>{
           }
     });
    
- console.log(queryObject)
+//  console.log(queryObject)
   
   }
 
@@ -73,10 +74,48 @@ const getAllSongs = async (req, res)=>{
   const songs = await result
   res.status(200).json({songs, nbHits:songs.length})
 };
-const postSong =(req, res) =>{
-  const new_song = req.body
-  console.log(new_song)
+
+
+const updateSong = async (req, res)=>{
+
+  // console.log(req.query)
+  // console.log(req.body)
+
+  const {song_id,song_featured, song_artist, song_name, song_genre, song_album} = req.body
+  const bodyObject ={}
+
+  if (song_id){
+    bodyObject.song_id = song_id
+  }
+  if (song_artist){
+  bodyObject.song_artist = song_artist
+  // console.log(bodyObject)
+  }
+  if (song_name){
+    bodyObject.song_name= song_name
+  }
+
+  if( song_featured){
+    bodyObject.song_featured = song_featured === 'true'? true: false
+  }
+  if (song_genre){
+    bodyObject.song_genre = song_genre
+  }
+
+  if (song_album){
+    bodyObject.song_album = song_album
+  }
+
+  // console.log(bodyObject)
+  // console.log(Song.findById(song_id))
+  const song = Song.findById(song_id)
+  // song.name = song_name
+  
+  const jsonSong = JSON.stringify({song})
+
+  // console.log(jsonSong)
+  res.json(song)
 }
 
-module.exports = {getAllSongs, postSong}
+module.exports = {getAllSongs, updateSong}
 
